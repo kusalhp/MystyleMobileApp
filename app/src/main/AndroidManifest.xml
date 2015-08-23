@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dell.mystylemobileapp" >
+    package="com.MyStyle.dell.mystylemobileapp" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.MyStyle.dell.mystylemobileapp.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,15 +17,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Signin"
+            android:name="com.MyStyle.dell.mystylemobileapp.Signin"
             android:label="@string/title_activity_signin" >
         </activity>
         <activity
-            android:name=".Home"
+            android:name="com.MyStyle.dell.mystylemobileapp.Home"
             android:label="@string/title_activity_home" >
         </activity>
         <activity
-            android:name=".SignUp"
+            android:name="com.MyStyle.dell.mystylemobileapp.SignUp"
             android:label="@string/title_activity_sign_up" >
         </activity>
     </application>

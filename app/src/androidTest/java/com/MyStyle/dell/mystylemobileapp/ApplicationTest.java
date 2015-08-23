@@ -1,4 +1,4 @@
-package com.example.dell.mystylemobileapp;
+package com.MyStyle.dell.mystylemobileapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,4 +1,4 @@
-package com.example.dell.mystylemobileapp;
+package com.MyStyle.dell.mystylemobileapp;
 
 /**
  * Created by Administrator on 8/23/2015.
