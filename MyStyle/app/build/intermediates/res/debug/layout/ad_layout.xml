@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ad_image"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="2dp"/>
+</LinearLayout><!-- From: file:/E:/3rd%202/MystyleMobileApp/MyStyle/app/src/main/res/layout/ad_layout.xml -->

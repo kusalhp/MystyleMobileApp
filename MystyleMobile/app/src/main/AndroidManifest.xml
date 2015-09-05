@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sliit.www.mystylemobile" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:name=".ChattApp"
+        android:allowBackup="true"
+        android:icon="@drawable/my_style_ogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".UserList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.sliit.www.mystylemobile.HomePage1"
+            android:label="@string/title_activity_home_page1" >
+        </activity>
+
+        <activity
+            android:name="com.sliit.www.mystylemobile.drawing.canvasDraw"
+            android:label="@string/title_activity_brush_chooser" >
+        </activity>
+
+        <activity
+            android:name="com.sliit.www.mystylemobile.drawing.brush_chooser"
+            android:label="@string/title_activity_brush_chooser" >
+        </activity>
+        <activity
+            android:name="com.sliit.www.mystylemobile.drawing.listViewProduct"
+            android:label="@string/title_activity_list_view_product" >
+        </activity>
+        <activity
+            android:name=".canvasDraw"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

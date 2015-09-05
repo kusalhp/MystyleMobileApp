@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.InputType;
@@ -274,6 +278,7 @@ public class Chat extends CustomActivity
 			lbl = (TextView) v.findViewById(R.id.lbl2);
 			lbl.setText(c.getMsg());
 
+            showBarMassage();
 			lbl = (TextView) v.findViewById(R.id.lbl3);
 			if (c.isSent())
 			{
@@ -304,4 +309,54 @@ public class Chat extends CustomActivity
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+
+
+/*
+Notification When receiveing the message
+ */
+    public void showBarMassage(){
+
+        final int NOTICE_ID =1;
+
+        runOnUiThread(new Runnable() {
+            public void run() {
+
+
+                Intent myI;
+                PendingIntent myPI;
+                NotificationManager myNM;
+                myI =new Intent(getApplicationContext(),UserList.class );
+             //   myI.putExtra("id1",id1);
+             //   System.out.println(id1+ " ID passing ");
+                myI.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                myPI = PendingIntent.getActivity(getApplicationContext(), 0, myI, 0);
+                myNM =(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+                Notification MyN = new Notification();
+                MyN.icon =R.drawable.ic_launcher;
+                MyN.tickerText = "New Message";
+           //     MyN.number=id1;
+                MyN.defaults |= Notification.DEFAULT_SOUND;
+                MyN.defaults |= Notification.DEFAULT_VIBRATE;
+                MyN.flags    |= Notification.FLAG_AUTO_CANCEL;
+
+                MyN.setLatestEventInfo(
+
+                        getApplicationContext(), "New Message", "You Receive new Message ", myPI
+                );
+
+                myNM.notify(1, MyN);
+
+                // myNM.notify()(1,MyN);
+
+
+
+            }
+
+        });
+
+
+    }
+
 }

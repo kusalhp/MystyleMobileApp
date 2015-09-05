@@ -66,7 +66,7 @@ public class Login extends CustomActivity
 					if (pu != null)
 					{
 						UserList.user = pu;
-						startActivity(new Intent(Login.this, home.class));
+						startActivity(new Intent(Login.this, HomePage1.class));
 						finish();
 					}
 					else

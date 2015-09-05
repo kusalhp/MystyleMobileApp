@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.concectechnologies.apps.loyality.MainActivity2"
+    android:background="#FFFFFF"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="300dp"
+                android:background="@android:color/black"
+                android:layout_above="@+id/textView22"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="325dp"
+                android:layout_height="1dp"
+                android:background="#2c3e50"
+                android:layout_above="@+id/btnContact"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="47dp" />
+
+            <ImageButton
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/btnLoyal"
+                android:src="@drawable/main_c_loyal"
+                android:background="@drawable/main_center_button"
+
+                android:layout_below="@+id/btnMenu"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                 />
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnContact"
+                android:background="@drawable/main_center_button"
+                android:src="@drawable/main_rb_icon"
+                android:paddingRight="5dp"
+                android:layout_alignTop="@+id/textView20"
+                android:layout_toRightOf="@+id/btnLoyal"
+                android:layout_toEndOf="@+id/btnLoyal"
+                android:layout_margin="5dp" />
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnAbout"
+                android:background="@drawable/main_center_button"
+                android:src="@drawable/main_lt_icon"
+                android:layout_alignTop="@+id/textView20"
+                android:layout_toLeftOf="@+id/btnLoyal"
+                android:layout_toStartOf="@+id/btnLoyal"
+                android:paddingLeft="5dp"
+                android:layout_margin="5dp" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnHistory"
+                android:src="@drawable/main_rt_history"
+                android:background="@drawable/main_center_button"
+                android:layout_below="@+id/view_Pager"
+                android:layout_toLeftOf="@+id/btnLoyal"
+                android:layout_toStartOf="@+id/btnLoyal"
+                android:paddingLeft="5dp"
+                android:layout_margin="5dp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="5dp"
+                android:background="#2c3e50"
+                android:id="@+id/imageButton" />
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnMenu"
+                android:paddingRight="5dp"
+                android:background="@drawable/main_center_button"
+                android:src="@drawable/main_lt_menu"
+                android:textAlignment="center"
+                android:layout_below="@+id/view_Pager"
+                android:layout_toRightOf="@+id/btnLoyal"
+                android:layout_toEndOf="@+id/btnLoyal"
+                android:layout_margin="5dp" />
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:id="@+id/view_Pager"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+            </android.support.v4.view.ViewPager>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/my_style_ogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Menu"
+                android:id="@+id/textView18"
+                android:layout_alignLeft="@+id/btnMenu"
+                android:layout_alignStart="@+id/btnMenu"
+                android:layout_below="@+id/btnMenu"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_alignRight="@+id/btnMenu"
+                android:layout_alignEnd="@+id/btnMenu"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="History"
+                android:textAlignment="center"
+                android:id="@+id/textView19"
+                android:layout_alignLeft="@+id/btnHistory"
+                android:layout_alignStart="@+id/btnHistory"
+                android:layout_toStartOf="@+id/btnLoyal"
+                android:layout_below="@+id/btnHistory"
+                android:layout_toLeftOf="@+id/btnLoyal"
+                android:gravity="center"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="My Points"
+                android:id="@+id/textView20"
+                android:layout_below="@+id/btnLoyal"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="About"
+                android:id="@+id/textView21"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/btnAbout"
+                android:layout_alignEnd="@+id/btnAbout"
+                android:layout_below="@+id/btnAbout"
+                android:textAlignment="center"
+                android:layout_alignLeft="@+id/btnAbout"
+                android:layout_alignStart="@+id/btnAbout"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="offers"
+                android:gravity="center"
+                android:id="@+id/textView22"
+                android:layout_alignBottom="@+id/textView21"
+                android:layout_alignLeft="@+id/btnContact"
+                android:layout_alignStart="@+id/btnContact"
+                android:textAlignment="center"
+                android:layout_below="@+id/btnContact"
+                android:layout_alignRight="@+id/btnContact"
+                android:layout_alignEnd="@+id/btnContact"
+                android:background="#FFFFFF"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
