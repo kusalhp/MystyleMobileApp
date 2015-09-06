@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_x="4dp"
+        android:layout_y="6dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingBottom="10dp"
+        android:textColor="#CC0033"
+        android:textSize="16dp"
+        android:text="topic"
+        android:layout_x="99dp"
+        android:layout_y="9dp" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#3399FF"
+        android:textSize="8dp"
+        android:text = "Topic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView"
+        android:layout_x="98dp"
+        android:layout_y="48dp"
+        android:textSize="12dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/margin"
+        android:layout_height="2dp"
+        android:background="#f1f1f1"
+        android:layout_x="0dp"
+        android:layout_y="101dp" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:isIndicator="true"
+        android:layout_x="205dp"
+        android:layout_y="72dp"
+        />
+
+    <TextView
+        android:layout_width="14dp"
+        android:layout_height="13dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:background="@drawable/arrow_more"
+        android:id="@+id/textView5"
+        android:layout_x="233dp"
+        android:layout_y="8dp" />
+
+</AbsoluteLayout>

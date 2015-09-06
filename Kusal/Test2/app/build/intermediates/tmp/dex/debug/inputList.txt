@@ -1,0 +1,9 @@
+D:\Study\Test2\app\build\intermediates\classes\debug
+D:\Study\Test2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-2a4d67304208109bc02f581e8621c9f8d54def8e.jar
+D:\Study\Test2\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-9271b65524836d81588e5e03e18cbebe4ce4e0a7.jar
+D:\Study\Test2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-45b310b58d1088c0a204bcc4df8ea93917e69484.jar
+D:\Study\Test2\app\build\intermediates\pre-dexed\debug\gson-2.3-dd171bc62e7bd5b3fbf2892f0c7c1b6627163158.jar
+D:\Study\Test2\app\build\intermediates\pre-dexed\debug\ion-2.1.6-67141cb5742bfa65041ed86d244e5c03c0bad2ff.jar
+D:\Study\Test2\app\build\intermediates\pre-dexed\debug\androidasync-2.1.6-c6f5aa42abfda1f53a1ea5d895ab2b96a0b315d7.jar
+D:\Study\Test2\app\build\intermediates\pre-dexed\debug\classes-6f37170fb3bc5d7b888c8c481ce4cddf242e0da4.jar
+D:\Study\Test2\app\build\intermediates\pre-dexed\debug\classes-57801462a1c5d2a8f5ce14a38ef564eb99feb9db.jar

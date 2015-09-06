@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Test2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_data_from_my_sql">DataFromMySQL</string>
+    <string name="title_activity_product_details">ProductDetails</string>
+    <string name="title_activity_products_under_categories">ProductsUnderCategories</string>
+    <string name="title_activity_product_comments">ProductComments</string>
+    <string name="title_activity_request_quotation">RequestQuotation</string>
+
+</resources>

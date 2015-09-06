@@ -59,7 +59,7 @@
         android:id="@+id/textView5"
 
         android:textSize="21dp"
-        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/editText2"
         android:layout_toLeftOf="@+id/textView3"
         android:layout_toStartOf="@+id/textView3" />
 
